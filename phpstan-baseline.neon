@@ -1,0 +1,11 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Return type \\(array\\<string, mixed\\>\\) of method Database\\\\Factories\\\\UserFactory\\:\\:definition\\(\\) should be compatible with return type \\(array\\<string, mixed\\>\\) of method Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory\\<App\\\\Models\\\\User\\>\\:\\:definition\\(\\)$#"
+			count: 1
+			path: database/factories/UserFactory.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: routes/console.php

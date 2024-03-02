@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Api Vicar",
+        "description": "Vicar Api description",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://vicar.local",
+            "description": "Local"
+        }
+    ],
+    "paths": {
+        "/": {
+            "get": {
+                "tags": [
+                    "Start"
+                ],
+                "summary": "Start",
+                "operationId": "StartApi",
+                "responses": {
+                    "204": {
+                        "description": "Successfully"
+                    }
+                }
+            }
+        }
+    }
+}

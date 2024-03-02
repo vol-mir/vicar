@@ -1,0 +1,27 @@
+includes:
+    - phpstan-baseline.neon
+    - ./vendor/larastan/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - app
+        - config
+        - database
+        - routes
+        - tests
+
+    # The level 9 is the highest level
+    level: 8
+
+    ignoreErrors:
+
+    excludePaths:
+
+    editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+
+    checkModelProperties: true
+    checkOctaneCompatibility: true
+    checkUnusedViews: false
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
